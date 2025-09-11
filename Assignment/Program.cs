@@ -103,7 +103,7 @@ namespace Assignment
             Console.WriteLine("Deleted 1 Course.");
 
             var remainingCourse = context.Courses.Include(c => c.Topic).First();
-            Console.WriteLine($"🔍 Retrieve: The remaining course is '{remainingCourse.Name}' under the topic '{remainingCourse.Topic.Name}'.\n");
+            Console.WriteLine($"Retrieve: The remaining course is '{remainingCourse.Name}' under the topic '{remainingCourse.Topic.Name}'.\n");
 
             // 5. Students
             Console.WriteLine("--- Managing Students ---");
